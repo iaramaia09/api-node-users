@@ -1,0 +1,33 @@
+#PARA UTILIZAR ESSES ENDPOINTS É NECESSÁRIO INSTALAR A EXTENSÃO DO VSCODE "REST CLIENT"
+###
+
+GET http://localhost:3333/filme
+
+###
+
+POST http://localhost:3333/filme
+Content-Type: application/json
+
+{
+    "nome": "donnie darko",
+    "diretor": "Richard Kelly",
+    "genero": "suspense",
+    "classificacao": "maior de 14 anos"
+  
+}
+
+###
+
+PUT http://localhost:3333/filme/470a048c-3634-4d5d-b6c3-1d6acbb89eb5
+Content-Type: application/json
+
+{
+    "nome": "clube da luta",
+    "diretor": "David Fincher",
+    "genero": "drama",
+    "classificacao": "maior de 18 anos"
+}
+
+###
+
+DELETE http://localhost:3333/filme/470a048c-3634-4d5d-b6c3-1d6acbb89eb5
